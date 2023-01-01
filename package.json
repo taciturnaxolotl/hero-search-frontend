@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kcoderhtml/hero-search-frontend/issues"
   },
-  "homepage": "https://github.com/kcoderhtml/hero-search-frontend#readme"
+  "homepage": "https://github.com/kcoderhtml/hero-search-frontend#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
 }
