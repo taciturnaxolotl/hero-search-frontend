@@ -677,6 +677,7 @@ video {
   font-size: 2rem;
   width: 3rem;
   height: 3rem;
+  color: white;
   opacity: 0;
   animation: fadeInOut 1s ease-in-out forwards;
   animation-duration: calc(1s + (1rem * var(--fontSize)));
