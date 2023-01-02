@@ -8,7 +8,16 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        'mutedpurple-100': "#514d87",
+        'mutedpurple-200': "#353254",
+        'mutedpurple-300': "#282544",
+        'muted-blue-100': "#3c4b60",
+        'muted-blue-200': "#2c3a4f",
+        'muted-blue-300': "#1c293d",
+      },
+    },
   },
   plugins: [],
 }
