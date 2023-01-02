@@ -671,20 +671,24 @@ video {
 .symbol {
   position: absolute;
   font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  color: white;
   opacity: 0;
   animation: fadeInOut 3s ease-in-out forwards;
+  transform: translateY(-100%);
+  animation: fall 3s ease-in-out forwards;
+  animation-duration: calc(3s + (1rem * var(fontSize)));
 }
 
-@keyframes fadeInOut {
+@keyframes fall {
   0% {
-    opacity: 0;
-  }
-
-  50% {
+    transform: translateY(-100%);
     opacity: 1;
   }
 
   100% {
+    transform: translateY(100%);
     opacity: 0;
   }
 }

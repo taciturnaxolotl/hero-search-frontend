@@ -18,4 +18,4 @@ setInterval(() => {
   setTimeout(() => {
     symbol.remove();
   }, 3000);
-}, 10);
+}, 100);
