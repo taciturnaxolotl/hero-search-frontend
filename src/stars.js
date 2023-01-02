@@ -2,7 +2,7 @@ const symbolsContainer = document.getElementById("symbols");
 
 setInterval(() => {
 	const symbol = document.createElement("div");
-	symbol.innerHTML = "⚝";
+	symbol.innerHTML = "★";
 	symbol.classList.add("symbol");
 
 	const x = Math.floor(Math.random() * window.innerWidth);
