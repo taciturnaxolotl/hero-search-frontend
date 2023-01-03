@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/src/dist/css/main.css" />
-  
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
 
   <title>Cosmic: Private AI Powered Search</title>
 </head>
@@ -31,7 +32,30 @@
     <input type="text" placeholder="Search..." class="ml-6 bg-transparent focus:outline-none focus:bg-transparent" />
   </div>
 
-  <script src="/src/stars.js" />
+  <script>
+    const symbolsContainer = document.getElementById("symbols");
+
+    setInterval(() => {
+      const symbol = document.createElement("div");
+      symbol.innerHTML = "★";
+      symbol.classList.add("symbol");
+
+      const x = Math.floor(Math.random() * window.innerWidth);
+      const y = Math.floor(Math.random() * window.innerHeight);
+      const fontSize = Math.floor(Math.random() * 1) + 1; // Random number between 1 and 6
+
+      symbol.style.left = `${x}px`;
+      symbol.style.top = `${y}px`;
+      symbol.style.fontSize = `${fontSize}rem`;
+
+      symbolsContainer.appendChild(symbol);
+
+      setTimeout(() => {
+        symbol.remove();
+      }, 3000);
+    }, 100);
+  </script>
+
 </body>
 
 </html>
